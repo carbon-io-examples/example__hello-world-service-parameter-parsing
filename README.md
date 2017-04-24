@@ -1,11 +1,13 @@
 # Hello Service (advanced)
 
 This example illustrates the use of Carbon.io to implement the
-a more ellaborate version of Hello World. 
+a more ellaborate version of [our hello world example](https://github.com/carbon-io/example__hello-world-service). 
 
 The code defining the service is located in ```lib/HelloService.js```
 and uses a simple ```Endpoint``` object to implement an HTTP ```GET```
-at the path ```/hello```:
+at the path ```/hello```. 
+
+This example illustrates formally defining the parameters taken and responses returned by our ```hello``` endpoint.  
 
 ```javascript
 __(function() {
@@ -56,8 +58,8 @@ We encourage you to clone the git repository so you can play around
 with the code. 
 
 ```
-% git clone git@github.com:carbon-io/example__hello-world-service.git
-% cd example__hello-world-service
+% git clone git@github.com:carbon-io/example__hello-world-service-advanced.git
+% cd example__hello-world-service-advanced
 % npm install
 ```
 
