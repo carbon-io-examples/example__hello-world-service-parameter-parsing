@@ -1,6 +1,6 @@
 # Hello Service (advanced)
 
-This example illustrates the use of Carbon.io to implement the
+This example illustrates the use of Carbon.io to implement
 a more ellaborate version of [our hello world example](https://github.com/carbon-io/example__hello-world-service). 
 
 The code defining the service is located in ```lib/HelloService.js```
