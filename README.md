@@ -68,6 +68,13 @@ To access the ```/hello``` endpoint:
 % curl localhost:888/hello?locale=es
 { msg: "Hola mundo!" }
 ```
+To access the ```/greetings``` endpoint:
+
+```
+% curl localhost:888/greetings 
+{"en":"Hello world!","fr":"Bonjour le monde!","es":"Hola mundo!"}
+```
+
 
 ## Running the unit tests
 
