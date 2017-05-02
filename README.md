@@ -7,6 +7,25 @@ The code defining the service is located in ```lib/HelloService.js```
 and uses a simple ```Endpoint``` object to implement an HTTP ```GET```
 at the path ```/hello```. 
 
+Recall that our [original, bare-bones hello-world service](https://github.com/carbon-io/example__hello-world-service) looked like this:
+
+```node
+__(function() {
+  module.exports = o({
+    _type: carbon.carbond.Service,
+    port: 8888,
+    endpoints : {
+      hello: o({
+        _type: carbon.carbond.Endpoint,
+        get: function(req, res) {
+          return { msg: "Hello world!" }
+        }
+      })
+    }
+  })
+})
+```
+
 This example illustrates formally defining the parameters taken and responses returned by our ```hello``` endpoint.  
 
 ```javascript
