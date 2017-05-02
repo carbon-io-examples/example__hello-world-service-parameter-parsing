@@ -40,7 +40,7 @@ __(function() {
         get: {
           parameters: { 
             who: {
-              location: 'query',
+              location: 'query', // one of 'path', 'query', 'header', or 'body'
               required: false,
               default: 'world',
               schema: { type: 'string' }
