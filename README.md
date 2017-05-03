@@ -104,7 +104,7 @@ To access the ```/hello``` endpoint:
 % curl localhost:8888/hello 
 { msg: "Hello world!" }
 
-% curl localhost:888/hello?who=Addison
+% curl localhost:8888/hello?who=Addison
 { msg: "Hello Addison!" }
 ```
 
