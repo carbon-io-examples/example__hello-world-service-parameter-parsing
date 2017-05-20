@@ -1,6 +1,6 @@
 # Hello Service (parameter parsing)
 
-This example is a more elaborate version of [our hello-world example](https://github.com/carbon-io/example__hello-world-service)
+This example is a more elaborate version of [our original hello-world example](https://github.com/carbon-io/example__hello-world-service)
 that illustrates the use of parameter and response definitions. 
 
 The code defining the service is located in ```lib/HelloService.js```
