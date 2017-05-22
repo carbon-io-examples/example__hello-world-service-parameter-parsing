@@ -43,7 +43,7 @@ __(function() {
               location: 'query', // one of 'path', 'query', 'header', or 'body'
               required: false,
               default: 'world',
-              schema: { type: 'string' } // drives input validation (which can also help prevent injection attacks)
+              schema: { type: 'string' } // drives parsing and validation (which can also help prevent injection attacks)
             }
           },
           responses: [
