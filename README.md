@@ -129,4 +129,4 @@ $ node lib/HelloService gen-static-docs --flavor aglio --out docs/index.html
 ```
 
 * [View current documentation](
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io/example__hello-world-service-parameter-parsing/master/docs/index.html)
+http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io-examples/example__hello-world-service-parameter-parsing/blob/carbon-0.7/docs/index.html)
