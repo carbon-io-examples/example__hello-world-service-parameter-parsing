@@ -77,9 +77,9 @@ We encourage you to clone the git repository so you can play around
 with the code. 
 
 ```
-% git clone git@github.com:carbon-io/example__hello-world-service-parameter-parsing.git
-% cd example__hello-world-service-parameter-parsing
-% npm install
+$ git clone -b carbon-0.6 git@github.com:carbon-io-examples/example__hello-world-service-parameter-parsing.git
+$ cd example__hello-world-service-parameter-parsing
+$ npm install
 ```
 
 ## Running the service
@@ -87,13 +87,13 @@ with the code.
 To run the service:
 
 ```sh
-% node lib/HelloService
+$ node lib/HelloService
 ```
 
 For cmdline help:
 
 ```sh
-% node lib/HelloService -h
+$ node lib/HelloService -h
 ```
 
 ## Accessing the service
@@ -101,10 +101,10 @@ For cmdline help:
 To access the ```/hello``` endpoint:
 
 ```
-% curl localhost:8888/hello 
+$ curl localhost:8888/hello 
 { msg: "Hello world!" }
 
-% curl localhost:8888/hello?who=Addison
+$ curl localhost:8888/hello?who=Addison
 { msg: "Hello Addison!" }
 ```
 
@@ -113,20 +113,20 @@ To access the ```/hello``` endpoint:
 This example comes with a simple unit test written in Carbon.io's test framework called TestTube. It is located in the ```test``` directory. 
 
 ```
-% node test/HelloServiceTest
+$ node test/HelloServiceTest
 ```
 
 or 
 
 ```
-% npm test
+$ npm test
 ```
 
 ## Generating API documentation (aglio flavor)
 
 ```sh
-% node lib/HelloService gen-static-docs --flavor aglio --out docs/index.html
+$ node lib/HelloService gen-static-docs --flavor aglio --out docs/index.html
 ```
 
 * [View current documentation](
-http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io/example__hello-world-service-parameter-parsing/master/docs/index.html)
+http://htmlpreview.github.io/?https://raw.githubusercontent.com/carbon-io-examples/example__hello-world-service-parameter-parsing/blob/carbon-0.6/docs/index.html)
