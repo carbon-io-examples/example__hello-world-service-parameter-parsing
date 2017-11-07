@@ -1,13 +1,13 @@
 # Hello Service (parameter parsing)
 
-This example is a more elaborate version of [our original hello-world example](https://github.com/carbon-io/example__hello-world-service)
+This example is a more elaborate version of [our original hello-world example](https://github.com/carbon-io-examples/example__hello-world-service)
 that illustrates the use of parameter and response definitions. 
 
 The code defining the service is located in ```lib/HelloService.js```
 and uses a simple ```Endpoint``` object to implement an HTTP ```GET```
 at the path ```/hello```. 
 
-Recall that our [original, bare-bones hello-world service](https://github.com/carbon-io/example__hello-world-service) looked like this:
+Recall that our original, bare-bones hello-world service looked like this:
 
 ```node
 __(function() {
@@ -123,6 +123,14 @@ $ npm test
 ```
 
 ## Generating API documentation (aglio flavor)
+
+To generate documentation using aglio, install it as a devDependency:
+
+```
+$ npm install -D --no-optional aglio
+```
+
+Using `--no-optional` speeds up aglio's install time significantly. Then generate the docs using this command:
 
 ```sh
 $ node lib/HelloService gen-static-docs --flavor aglio --out docs/index.html
