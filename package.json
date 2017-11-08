@@ -8,7 +8,7 @@
     "url" : "https://github.com/carbon-io/example__hello-world-service-advanced"
   },
   "dependencies": {
-    "carbon-io" : "> 0.6.0"
+    "carbon-io": "0.7.x"
   },
   "scripts": {
     "test": "node test/HelloServiceTest"
