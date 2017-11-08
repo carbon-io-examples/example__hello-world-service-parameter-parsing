@@ -17,4 +17,3 @@ addons:
       - mongodb-org-server
 before_script:
   - sleep 15
-  - npm link @carbon-io/carbond
