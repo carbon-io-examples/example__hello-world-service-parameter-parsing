@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "8"
+  - "6"
+services:
+  - mongodb
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+      - mongodb-3.0-precise
+    packages:
+      - g++-4.8
+      - build-essential
+      - mongodb-org-server
+before_install:
+  - git clone https://github.com/carbon-io/carbond.git
+  - cd carbond && npm link && cd ..
+before_script:
+  - sleep 15
+  - npm link @carbon-io/carbond
