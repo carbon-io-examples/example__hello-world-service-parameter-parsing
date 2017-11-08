@@ -2,7 +2,7 @@
   "name": "example__hello-world-service-advanced",
   "version": "0.1.0",
   "description": "Carbon.io Example: Hello-world Service (advanced)",
-  "engines": { "node": ">=4.0" },
+  "engines": { "node": ">=6.0" },
   "repository" : { 
     "type" : "git",
     "url" : "https://github.com/carbon-io/example__hello-world-service-advanced"
