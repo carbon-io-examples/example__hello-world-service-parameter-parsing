@@ -5,11 +5,11 @@
 
 
 This example is a more elaborate version of [our original hello-world example](https://github.com/carbon-io-examples/example__hello-world-service)
-that illustrates the use of parameter and response definitions. 
+that illustrates the use of parameter and response definitions.
 
 The code defining the service is located in ```lib/HelloService.js```
 and uses a simple ```Endpoint``` object to implement an HTTP ```GET```
-at the path ```/hello```. 
+at the path ```/hello```.
 
 Recall that our original, bare-bones hello-world service looked like this:
 
@@ -42,7 +42,7 @@ __(function() {
         _type: carbon.carbond.Endpoint,
 
         get: {
-          parameters: { 
+          parameters: {
             who: {
               location: 'query', // one of 'path', 'query', 'header', or 'body'
               required: false,
@@ -78,7 +78,7 @@ __(function() {
 ## Installing the service
 
 We encourage you to clone the git repository so you can play around
-with the code. 
+with the code.
 
 ```
 $ git clone -b carbon-0.7 git@github.com:carbon-io-examples/example__hello-world-service-parameter-parsing.git
@@ -105,7 +105,7 @@ $ node lib/HelloService -h
 To access the ```/hello``` endpoint:
 
 ```
-$ curl localhost:8888/hello 
+$ curl localhost:8888/hello
 { msg: "Hello world!" }
 
 $ curl localhost:8888/hello?who=Addison
@@ -114,13 +114,13 @@ $ curl localhost:8888/hello?who=Addison
 
 ## Running the unit tests
 
-This example comes with a simple unit test written in Carbon.io's test framework called TestTube. It is located in the ```test``` directory. 
+This example comes with a simple unit test written in Carbon.io's test framework called TestTube. It is located in the ```test``` directory.
 
 ```
 $ node test/HelloServiceTest
 ```
 
-or 
+or
 
 ```
 $ npm test
